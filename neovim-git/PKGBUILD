@@ -20,7 +20,7 @@ optdepends=('python2-neovim: for Python 2 plugin support (see :help provider-pyt
             'wl-clipboard: for clipboard support on wayland (see :help clipboard)')
 source=("${pkgname}::git+https://github.com/neovim/neovim.git")
 sha256sums=('SKIP')
-provides=("neovim=${pkgver}")
+provides=("neovim=${pkgver}" vim-plugin-runtime)
 conflicts=('neovim')
 install=neovim-git.install
 
